@@ -70,7 +70,7 @@ function render() {
   }
 
   const left = todos.filter((t) => !t.done).length;
-  count.textContent = todos.length === 0 ? '清單是空的，新增第一件事吧' : `還有 ${left} 件事沒完成`;
+  count.textContent = todos.length === 0 ? '清單是空的，新增第一件事吧' : `還有 ${left} 件事沒完成，已完成 ${todos.length - left} 件`;
 }
 
 form.addEventListener('submit', (event) => {
