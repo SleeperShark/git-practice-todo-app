@@ -71,7 +71,7 @@ h1 { color: teal; }
 .todo-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   margin: 24px 0 0;
   padding: 0;
   list-style: none;
