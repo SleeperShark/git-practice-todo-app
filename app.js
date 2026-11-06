@@ -34,7 +34,7 @@ function toggleTodo(id) {
 }
 
 function removeTodo(id) {
-  todos = todos.filter((t) => t.id === id);
+  todos = todos.filter((t) => t.id !== id);
   save();
   render();
 }
