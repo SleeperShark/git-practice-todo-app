@@ -5,6 +5,7 @@ const form = document.getElementById('todo-form');
 const input = document.getElementById('todo-input');
 const list = document.getElementById('todo-list');
 const count = document.getElementById('todo-count');
+const search = document.getElementById('search-input');
 
 let todos = load();
 
@@ -41,7 +42,9 @@ function removeTodo(id) {
 
 // 決定清單上要顯示哪些項目
 function visibleTodos() {
-  return todos;
+  const keyword = search.value.trim();
+  if (!keyword) return todos;
+  return todos.filter((t) => t.text.includes(keyword));
 }
 
 function render() {
@@ -88,3 +91,6 @@ render();
 input.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') input.value = '';
 });
+
+// 輸入關鍵字，即時篩選清單
+search.addEventListener('input', render);

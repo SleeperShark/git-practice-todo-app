@@ -130,3 +130,9 @@ input:focus-visible {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+.search {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+}
