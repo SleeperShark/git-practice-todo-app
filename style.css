@@ -5,7 +5,7 @@
   --ink: #1d2433;
   --muted: #5d6b82;
   --line: #d6dde8;
-  --accent: #2f5bd3;
+  --accent: #0f8a80;
   --accent-ink: #ffffff;
 }
 
@@ -22,7 +22,7 @@ body {
   line-height: 1.6;
 }
 
-h1 { color: navy; }
+h1 { color: teal; }
 
 .app {
   max-width: 560px;
