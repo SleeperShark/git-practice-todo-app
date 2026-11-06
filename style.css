@@ -136,3 +136,18 @@ input:focus-visible {
   width: 100%;
   margin-top: 12px;
 }
+
+/* 深色模式：跟著電腦的設定自動切換 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141a24;
+    --card: #1e2633;
+    --ink: #e6ebf2;
+    --muted: #9aa7ba;
+    --line: #2f3a4b;
+    --accent: #7aa2ff;
+    --accent-ink: #141a24;
+  }
+
+  h1 { color: #9db8ff; }
+}
