@@ -83,3 +83,8 @@ form.addEventListener('submit', (event) => {
 });
 
 render();
+
+// 按 Esc 可以清空輸入框
+input.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') input.value = '';
+});
